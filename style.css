@@ -1,0 +1,35 @@
+/*limited CSS with bootstrap*/
+
+body{
+	background: url("images/fantasy.jpg");
+	background-size: cover;
+}
+#game-content{
+	margin-top: 30px;
+    background:rgba(245, 245, 245, 1);
+    overflow: auto;
+}
+#letters{
+    min-height: 100px;
+    overflow: auto;
+}
+#reset{
+	margin-bottom: 30px;
+}
+
+h1 {
+    font-family: fantasy
+    
+}
+h2 {
+    font-family:fantasy
+}
+h3 {
+    font-family: fantasy
+}
+
+.crystal-image {
+    width: 100px;
+    height: 100px;
+    position: justify;
+  }

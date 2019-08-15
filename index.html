@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+	<section class="container" id="game-content">
+
+        <h1 class="row">Crystal Collector</h1>
+
+        <h2 class="row">Crystal Goal: <span id="number-to-guess"></span></h2>
+
+        <h2 class="row">Current Count: <span id="user-count"></span></h2>
+
+        <div id="crystals" class="row">
+            <button id="green" class="col-md-3"><img src="images/green-gem.png" class="crystal-image"></button>
+            <button id="yellow" class="col-md-3"><img src="images/yellow-gem.png" class="crystal-image"></button>
+            <button id="red" class="col-md-3"><img src="images/red-gem.png" class="crystal-image"></button>
+            <button id="blue" class="col-md-3"><img src="images/blue-gem.png" class="crystal-image"></button>
+        </div>
+          
+
+		<div  class="row">			
+            
+			<div class="col-md-6 text-center">
+				
+				<div class="row">
+					<div class="col-md-4">
+						<h3 id="wins">Wins: <span id="wins"></span></h3>
+                        <h3 id= "losses">Losses: <span id="losses"></span> </h2>
+                        <br><br>
+						<button class="btn btn-lg btn-danger" id="reset" onclick="reset()">Reset Scores</button>
+					</div>	
+                </div>	
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="game.js"></script>
+
+</body>
+
+
+</html>
