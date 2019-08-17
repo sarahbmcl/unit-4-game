@@ -18,7 +18,8 @@ body{
 }
 
 h1 {
-    font-family: fantasy
+    font-family: fantasy;
+    text-align: center;
     
 }
 h2 {

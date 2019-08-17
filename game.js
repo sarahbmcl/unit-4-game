@@ -23,8 +23,6 @@ let counter ="";
 
 //----------Functions----------//
 
-start();
-
 function start(){
     for (i=0; i<randomNumber.length; i++) {
     randomNumber = Math.floor(Math.random() * randomNumber.length);
@@ -32,13 +30,62 @@ function start(){
 	console.log(randomNumber);
 
 	//join the "_ " array into a string.
-	console.log(blanks.join(" "));
 	document.querySelector("#input").innerHTML = (blanks.join(" "));
 	document.querySelector("#letters").innerHTML = (letters);
 	document.querySelector("#guesses").innerHTML = (guesses);
 	document.querySelector("#score").innerHTML = ("Wins: "+ wins + " Losses: "+ losses);
 }
 
+start();
+
 let counter = 0;
 $(".crystal-image").on("click", function() {
+});
+
+
+
+//CRYSTAL CLICK FUNCTIONS//
+// $(document).ready(function() {
+//     theGame.initialize();
+
+//     $("#green").on("click", function(){
+//         if(!theGame.wonGame() && !theGame.lostGame()){
+//             theGame.score += theGame.crystal1;
+//             $("#score").text(theGame.score);
+//             $("#crystal-1 .value").text(theGame.crystal1);
+//             theGame.checkStatus();
+//         }
+//     });
+
+//     $("#yellow").on("click", function(){
+//         if(!theGame.wonGame() && !theGame.lostGame()){
+//             theGame.score += theGame.crystal1;
+//             $("#score").text(theGame.score);
+//             $("#crystal-1 .value").text(theGame.crystal1);
+//             theGame.checkStatus();
+//         }
+//     });
+
+//     $("#red").on("click", function(){
+//         if(!theGame.wonGame() && !theGame.lostGame()){
+//             theGame.score += theGame.crystal1;
+//             $("#score").text(theGame.score);
+//             $("#crystal-1 .value").text(theGame.crystal1);
+//             theGame.checkStatus();
+//         }
+//     });
+
+//     $("#blue").on("click", function(){
+//         if(!theGame.wonGame() && !theGame.lostGame()){
+//             theGame.score += theGame.crystal1;
+//             $("#score").text(theGame.score);
+//             $("#crystal-1 .value").text(theGame.crystal1);
+//             theGame.checkStatus();
+//         }
+//     });
+
+
+//RESTART GAME//
+$("#restart").on("click", function(){
+    theGame.initialize();
 });
