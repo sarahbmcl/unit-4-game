@@ -34,3 +34,11 @@ h3 {
     height: 100px;
     position: justify;
   }
+
+.container {
+    padding: 50px;
+}
+
+#wins-and-losses{
+    text-align: right;
+}

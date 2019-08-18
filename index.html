@@ -16,34 +16,37 @@
 <body>
 	<section class="container" id="game-content">
 
-        <h1 class="row">Crystal Collector</h1>
+        <h1>Crystal Collector</h1>
 
-        <div class="col-md-6">
-        <h3 class="row">Crystal Goal:
+        <div  class="row">
+            <div class="col-md-6">
+            <h3 class="row">Crystal Goal:
+                <br>
+                <span id="randomNumber"></span></h3>
+
+            <h3 class="row">Current Count:
+                <br>
+                <span id="currentScore"></span></h3>
+            </div>
+
+            <div class="col-md-6" id="wins-and-losses">
+                <h3>Wins: <span id="numberWins"></span></h3>
+                <h3>Losses: <span id="numberLosses"></span> </h2>	
+            </div>
+        </div>
             <br>
-            <span id="randomNumber"></span></h3>
-
-        <h3 class="row">Current Count:
             <br>
-            <span id="currentScore"></span></h3>
-        </div>
-
-        <div class="col-md-6">
-            <h3>Wins: <span id="numberWins"></span></h3>
-            <h3>Losses: <span id="numberLosses"></span> </h2>	
-        </div>
-
-        <div id="crystals" class="row">
-            <button id="green" class="col-md-3"><img src="images/green-gem.png" class="crystal-image"></button>
-            <button id="yellow" class="col-md-3"><img src="images/yellow-gem.png" class="crystal-image"></button>
-            <button id="red" class="col-md-3"><img src="images/red-gem.png" class="crystal-image"></button>
-            <button id="blue" class="col-md-3"><img src="images/blue-gem.png" class="crystal-image"></button>
-        </div>
+            <div id="crystals" class="row">
+                <button id="green" class="col-md-3"><img src="images/green-gem.png" class="crystal-image"></button>
+                <button id="yellow" class="col-md-3"><img src="images/yellow-gem.png" class="crystal-image"></button>
+                <button id="red" class="col-md-3"><img src="images/red-gem.png" class="crystal-image"></button>
+                <button id="blue" class="col-md-3"><img src="images/blue-gem.png" class="crystal-image"></button>
+            </div>
         
         <br>
 
         <div class="col text-center">
-            <button class="btn btn-lg btn-danger" onclick="reset()">Reset Scores</button>
+            <button class="btn btn-lg btn-danger" id="reset">Reset Scores</button>
         </div>
     </section>
 

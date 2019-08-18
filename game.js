@@ -18,8 +18,9 @@ $( document ).ready(function(){
     //Declaring variables for tallies
   $('#numberWins').text(wins);
   $('#numberLosses').text(losses);
+  $('#currentScore').text(userTotal);
   
-  //resets the game
+  //function to reset the game
   function reset(){
     Random=Math.floor(Math.random()*101+19);
     console.log(Random)
@@ -30,11 +31,16 @@ $( document ).ready(function(){
     blueNumber= Math.floor(Math.random()*12+1);
     userTotal= 0;
     $('#currentScore').text(userTotal);
-    } 
+  } 
+
+  //on click reset scores
+  $('#reset').on ('click', function(){
+    reset();  
+  }) 
 
   //adds the wins to the userTotal
   function win(){
-    alert("You won!");
+    alert("WIN: You've met your crystal goal--Play again!");
     wins++; 
     $('#numberWins').text(wins);
     reset();
@@ -42,7 +48,7 @@ $( document ).ready(function(){
 
   //adds the losses to the userTotal
   function loss(){
-    alert ("You lose!");
+    alert ("LOSS: Your bag was overfilled and broke--Play again!");
     losses++;
     $('#numberLosses').text(losses);
     reset()
