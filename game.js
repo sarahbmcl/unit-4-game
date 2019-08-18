@@ -51,7 +51,7 @@ $( document ).ready(function(){
     alert ("LOSS: Your bag was overfilled and broke--Play again!");
     losses++;
     $('#numberLosses').text(losses);
-    reset()
+    reset();
   }
 
   //sets up click for jewels     
